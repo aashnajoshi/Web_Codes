@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Title of Site </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--importing font (from gfonts)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+
+    <!--adding favicon (icon on tab before title) using link tag-->
+    <link rel="shortcut icon"
+        href="https://cdn2.iconfinder.com/data/icons/astronaut-3d-illustration/512/ASTRONOUT_playing_guitar_on_the_moon.png"
+        type="image/x-icon">
+
+    <!--internal css (using 'style' tag)-->
+    <style>
+        h1,
+        h2,
+        h3 {
+            font: bold;
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+
+    <!--importing external css (using 'link' tag to import the css file)-->
+    <link rel="stylesheet" href="sty.css">
+
+    <!--internal js (using 'script' tag)-->
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img src="icon.png" id="mode" height="40px" onclick="myFunction()">
+
+            <!--two ways to add "go to top" hyperlink-->
+            <button id="btn" class="lnk"><a href="#content">Back to Top</a></button><a href="#content"><img id="icon"
+                    src="up.png" height="40px"></a>
+            <div id="navbar">
+                <nav>
+                    <ul type="none" class="lt">
+                        <li>
+                            <h1> Main Heading</h1>
+                        </li>
+                        <li>
+                            <div id="bookmarks">
+                                <a href="#para">Random Paragraph from Shadow n Bone</a>
+                                <a href="#media">Medias in HTML</a>
+                                <a href="#Hyperlinks">Hyperlinks</a>
+                                <a href="#Lists">Lists</a>
+                                <a href="#Table">Table</a>
+                                <a href="#Form">Form</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr>
+        <main><img
+                src="https://cdn2.iconfinder.com/data/icons/astronaut-3d-illustration/512/ASTRONOUT_playing_guitar_on_the_moon.png"
+                id="anim">
+            <hr>
+            <div id="para">
+                <h2>Random Paragraph from Shadow n Bone</h2>
+
+                <!--inline css (using 'style' attrib)-->
+                <img class="pix" src="https://flxt.tmsimg.com/assets/p19430080_b_h9_ab.jpg" alt="Image failed to load"
+                    style="float:left; margin-right: 10px;">
+                <p class="text">The servants called them <b>Malenchki</b>,little ghosts, because they were the smallest
+                    and the youngest, and because they haunted the Duke’s house like giggling phantoms, darting in and
+                    out of rooms,hiding in cupboards to eavesdrop,sneaking into the kitchen to steal the last of the
+                    summer peaches.</p>
+                <article class="text">The boy and the girl had arrived within weeks of each other, two more orphans of
+                    the border wars,dirty-faced refugees plucked from the rubble of distant towns and brought to the
+                    Duke’s estate to learn to read and write, and to learn a trade. The boy was short and stocky, shy
+                    but always smiling. The girl was different, and she knew it. </article>
+                <p class="text">Huddled in the kitchen cupboard, listening to the grownups gossip,she heard the Duke’s
+                    housekeeper, Ana Kuya,say,“She’s an ugly little thing.No child should look like that. Pale and sour,
+                    like a glass of milk that’s turned.”“And so skinny!” the cook replied. “Never finishes her supper.”
+                    Crouched beside the girl, the boy turned to her and whispered,“Why don’t you eat? “Because
+                    everything she cooks tastes like mud.” “Tastes fine to me.” “You’ll eat<i>anything</i>”. They bent
+                    their ears back to the crack in the cupboard doors.A moment later the boy whispered, “I don’t think
+                    you’re ugly.” “<i>Shhhh!</i>” the girl hissed. <b>But hidden by the deep shadows of the cupboard,
+                        she smiled.</b></p>
+                <p class="text">In the summer, they endured long hours of chores followed by even longer hours of
+                    lessons in stifling classrooms. When the heat was at its worst, they escaped into the woods to hunt
+                    for birds’ nests or swim in the muddy little creek, or they would lie for hours in their meadow,
+                    watching the sun pass slowly overhead, speculating on where they would build their dairy farm and
+                    whether they would have two white cows or three.<b><a
+                            href="https://readonlinefreebook.com/shadow-and-bone-s5373-c1-h">Continue Reading!!</a></b>
+                </p>
+                <hr>
+
+                <!-- Auto-generated paragraph using lorem50, pre tag prints text as it is -->
+                <pre class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam assumenda pariatur
+non accusamus repellat! Laudantium laboriosam quaerat iure tempora, necessitatibus 
+qui quia nam adipisci delectus aperiam provident?Labore cupiditate rerum et, quos 
+temporibus, aperiam voluptas ratione quisq uam accusantium sed impedit vitae tenetur 
+repudiandae, blanditiis at quaerat officia omnis ex nam!
+                              Subscript and superscript: 3<sub>x</sub>.2<sup>2x+1</sup></pre>
+            </div>
+            <hr>
+            <div id="media">
+                <h2>Medias in HTML</h2>
+                <h3>Images</h3>
+                <div class="image">
+                    <div class="img"><img class="pix" src="pic1.jpg" alt="Image Failed to load">
+                        <center>
+                            <caption>Local Image</caption>
+                        </center>
+                    </div>
+                    <div class="img"><img class="pix"
+                            src="https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png"
+                            alt="Image Failed to load">
+                        <center>
+                            <caption>Online Image</caption>
+                        </center>
+                    </div>
+                </div><br><br>
+                <hr><u>
+                    <h3>Audio</h3>
+                </u>
+                <div>
+                    <audio src="flute.m4a" controls></audio><br>
+                </div>
+                <center>
+                    <caption>Audio Track</caption>
+                </center>
+            </div>
+    </div>
+    <hr>
+    <h3>Video</h3>
+    <div class="image">
+        <div class="img"><video class="pix" src="Rain.mp4" poster="poster1.png" controls></video>
+            <center>
+                <caption>Local Vid Clip</caption>
+            </center>
+        </div>
+        <div class="img"><iframe class="pix" src="https://player.vimeo.com/video/842348732" allowfullscreen
+                style="height:250px;width:440px"></iframe>
+            <center>
+                <caption>Online Vid Clip</caption>
+            </center>
+        </div>
+    </div>
+    <hr>
+    </div>
+    <div id="Hyperlinks">
+        <h2>Hyperlinks</h2>
+        <h3>Text Form</h3>
+
+        <!--target attrib determines where the site opens (_self: same tab; _blank: new tab)-->
+        <a href="http://youtube.com" target="_blank" class="lnk"> YouTube</a><br>
+        <a href="http://facebook.com" target="_blank" class="lnk"> Facebook</a><br>
+        <a href="http://google.com" target="_blank" class="lnk"> Google</a><br><br>
+        <h3>Button Form</h3>
+        <button class="lnk"><a href="http://youtube.com" target="_blank"> YouTube</a> <br></button>
+        <button class="lnk"><a href="http://facebook.com" target="_blank"> Facebook</a> <br></button>
+        <button class="lnk"><a href="http://google.com" target="_blank"> Google</a></button><br><br>
+        <h3>Hyperlinked Image</h3>
+        <a href="https://pixabay.com/illustrations/forest-trees-fog-silhouette-mist-5855196/" target="_blank">
+            <img class="pix" src="pic1.jpg" alt="Image Failed to load"></a><br>
+        <h3>YT Vid</h3>
+        <iframe class="pix" src="https://www.youtube.com/embed/xuP4g7IDgDM"></iframe><br><br>
+    </div>
+    <hr>
+    <div id="Lists" class="text">
+        <h2>Lists</h2>
+        <h3>Ordered List</h3>
+        <ol type="a">
+            <li> Item1</li>
+            <li> Item2</li>
+            <li> Item3</li>
+        </ol>
+        <ol type="A" start="4">
+            <li> Item4</li>
+            <li> Item5</li>
+            <li> Item6</li>
+        </ol>
+        <ol type="i" start="7">
+            <li> Item7</li>
+            <li> Item8</li>
+            <li> Item9</li>
+        </ol>
+        <ol type="I" start="10">
+            <li> Item10</li>
+            <li> Item11</li>
+            <li> Item12</li>
+        </ol>
+        <ol type="1" start="13">
+            <li> Item13</li>
+            <li> Item14</li>
+            <li> Item15</li>
+        </ol>
+        <hr>
+        <h3>Unordered List</h3>
+        <ul type="disc">
+            <li> Item1</li>
+            <li> Item2</li>
+            <li> Item3</li>
+        </ul>
+        <ul type="circle">
+            <li> Item4</li>
+            <li> Item5</li>
+            <li> Item6</li>
+        </ul>
+        <ul type="square">
+            <li> Item7</li>
+            <li> Item8</li>
+            <li> Item9</li>
+        </ul>
+        <ul type="none">
+            <li> Item10</li>
+            <li> Item11</li>
+            <li> Item12</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="Table" class="text">
+        <h2>Table</h2>
+        <table border="1" style="height: 250px;width: 440px">
+            <tr>
+                <th>Sno</th>
+                <th>Head1</th>
+                <th>Head2</th>
+                <th>Head3</th>
+            </tr>
+            <tr>
+                <th>01.</th>
+                <td>101</td>
+                <td>102</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <th>02.</th>
+                <td>201</td>
+                <td>202</td>
+                <td>203</td>
+            </tr>
+            <tr>
+                <th>03.</th>
+                <td>301</td>
+                <td>302</td>
+                <td>303</td>
+            </tr>
+        </table><br>
+    </div>
+    <hr>
+    <div id="Form" class="text">
+        <h2>Form</h2>
+        <fieldset>
+            <legend> Fill your details: </legend>
+            <form>
+                <label>Name: </label> <input type="text" placeholder="Enter Your First Name" maxlength="10" required>
+                <label>Last Name: </label> <input type="text" placeholder="Enter your Last Name" maxlength="10"
+                    required><br><br>
+                <label>Phone No: </label><input type="text" placeholder="Enter your Phone No." maxlength="10" required>
+                <label>Email: </label> <input type="email" placeholder="Enter your E-mail Id" required> <br><br>
+                <label>DOB: </label><input type="date" required> <br><br>
+                <label>Address: </label><textarea rows="3" cols="30" maxlength="100" placeholder="Enter your address"
+                    wrap="hard" required></textarea><br><br>
+                <label>Username: </label><input type="text" placeholder="Set an Username" required>
+                <label>Password: </label><input type="password" placeholder="Enter your Password" required><br><br>
+                <label>Select Gender: </label><br><br><input type="radio" name="Gender">Male<input type="radio"
+                    name="Gender">Female<input type="radio" name="Gender">Unspecified<br><br><input type="checkbox"
+                    class="text"> I have read and agree to all terms n conditions. And hereby declare all the
+                information filled in the above form is authentic.<br><br>
+                <details>
+                    <summary>Terms:
+                        <!-- positioning is off
+                        <button popovertarget="info" id="btnn" type="button" class="information">i</button>
+                        <div id="info" popover> Accept em blindly :/</div><br><br> -->
+                    </summary>
+                    <content>Random terms to oblige.. ;)</content>
+                </details><br><button type="submit"> Submit Form </button> <button type="reset"> Reset</button>
+            </form>
+        </fieldset><br>
+    </div>
+    </main>
+    <hr>
+    <footer class="text">
+        <center>&#169 Footer of the page</center>
+    </footer>
+    <hr><br><br></div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+* {
+  font-family: 'Playfair Display', serif;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --dark: #000000f2;
+  --light: #ffffffd3;
+  --mid: #808080;
+}
+
+h1,
+h2,
+h3 {
+  font: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h1,
+h2 {
+  text-shadow: 4px 3px 4px var(--mid);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-left: 5px;
+}
+
+#navbar {
+  color: white;
+  margin: 0;
+  width: 1255px;
+}
+
+#bookmarks {
+  display: flex;
+  gap: 20px;
+}
+
+.lt {
+  background-image: linear-gradient(to left, #2AFADF 10%, #4C83FF 90%);
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 5px 25px 0px 5px;
+  align-items: center;
+}
+
+#btn {
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.1s linear 0.1s;
+}
+
+#mode {
+  cursor: pointer;
+  text-align: center;
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  transition: all 0.1s linear 0.1s;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card {
+  width: 25%;
+  height: 500px;
+  padding: 20px;
+  background-color: var(--light);
+  box-shadow: 10px 10px 35px var(--dark);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card button {
+  cursor: pointer;
+  background: #2dc3e2;
+  width: 80%;
+  height: 5%;
+  border: 0.5px var(--light);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 15px var(--mid);
+}
+
+.card img {
+  height: 150px;
+  transition: all 0.3s linear 0.1s;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+a:hover,
+button:hover {
+  color: var(--light);
+}
+
+p {
+  font-size: 12px;
+}
+
+/*dark-mode settings*/
+.dark-mode {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.dark-mode a {
+  color: var(--light);
+}
+
+.dark-mode .lt {
+  background-image: linear-gradient(to left, #4b6cb7 10%, #182848 90%);
+  color: white;
+}
+
+.dark-mode .card {
+  background-color: var(--dark);
+  box-shadow: 10px 10px 35px var(--mid);
+}
+
+.dark-mode button {
+  background: #4b6cb7;
+}

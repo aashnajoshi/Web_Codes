@@ -1,0 +1,201 @@
+/* 3 types of css: inline, internal, external;
+   selectors: 
+      - universal(*), element (no symbol), id(#), class(.); 
+      - To edit various properties we separate the elements using (,);
+      - To edit particular type of elements from a class (tag.class);
+      - To edit a specific quality of element (tag:quality);
+*/
+
+/*targetting all elements*/
+* {
+  font-family: "Bacasime Antique", serif;
+  box-sizing: border-box;
+  overflow-x: none;
+}
+
+:root {
+  --dark: #000000f2;
+  --mid: #808080;
+  --light: #ffffffd3;
+
+  --bg: var(--light);
+  --txt: var(--dark);
+}
+
+/*targetting specific tag*/
+body {
+  background-color: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--txt);
+  text-shadow: .5em 1em 1em var(--mid);
+}
+
+a {
+  color: var(--txt);
+  text-align: center;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+button {
+  color: var(--txt);
+  text-align: center;
+  cursor: pointer;
+  padding: .3em;
+  background: var(--bg);
+  border: 0.5em var(--bg);
+  border-radius: 2em;
+  justify-content: center;
+  align-items: center;
+  box-shadow: .5em .5em .8em var(--mid);
+}
+
+/*targetting grp of tags*/
+p,
+pre,
+article {
+  color: var(--txt);
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--bg);
+  text-align: center;
+  justify-content: center;
+  padding: .5em;
+  margin: .5em;
+}
+
+/*targetting ids*/
+#bookmarks {
+  display: flex;
+  gap: 1.2em;
+}
+
+#navbar {
+  margin: 0;
+  width: auto;
+}
+
+#btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#icon {
+  cursor: pointer;
+  text-align: center;
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+#mode {
+  cursor: pointer;
+  text-align: center;
+  position: fixed;
+  top: 7rem;
+  right: 1rem;
+}
+
+#anim {
+  height: 2.4rem;
+  margin: .5rem;
+  position: relative;
+
+  /* animation can be done in two ways:  (defining each property separately.)
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: move; */
+
+  /*or in a single line:*/
+  animation: 10s linear infinite alternate move;
+}
+
+/*targetting class*/
+.lt {
+  background-image: linear-gradient(to left, #B1C7D2 30%, #7198AD 70%);
+  display: flex;
+  justify-content: space-between;
+  font-size: .6rem;
+  padding: 1em;
+  align-items: space-evenly;
+}
+
+.text,
+caption {
+  color: var(--txt);
+  padding-left: 2em;
+}
+
+.image {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.pix {
+  border: .25rem solid var(--txt);
+  box-shadow: .5em 1em 1em var(--mid);
+  transition: all 0.3s linear 0.1s;
+  margin: 10px;
+  height: 250px;
+  width: auto;
+}
+
+/*targetting tags from a particular class*/
+img.pix:hover {
+  transform: scale(1.07);
+}
+
+a.lnk {
+  margin-left: 2em;
+}
+
+/*targetting properties of a tag*/
+button:hover,
+.dark-mode button:hover {
+  background-color: #B1C7D2;
+  color: var(--txt);
+}
+
+a:hover,
+.dark-mode a:hover {
+  color: var(--mid);
+}
+
+/*dark-mode settings*/
+.dark-mode {
+  --bg: var(--dark);
+  --txt: var(--light);
+}
+
+.dark-mode .lt {
+  background-image: linear-gradient(to left, #B1C7D2 30%, #456990 70%);
+}
+
+/* Animation Queries*/
+@keyframes move {
+  from {
+    top: 0;
+    left: 0;
+  }
+
+  to {
+    top: 0;
+    /* left: 1100px; */
+  }
+}

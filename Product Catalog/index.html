@@ -1,0 +1,224 @@
+<html>
+
+<head>
+  <title>Product Catalog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/8164/8164767.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2? family=Playfair+Display&display=swap" rel="stylesheet">
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <img src="icon.png" id="mode" height="40px" onclick="myFunction()">
+      <div id="navbar">
+        <nav>
+          <ul type="none" class="lt">
+            <li>
+              <h1>Product Catalog</h1>
+            </li>
+            <li>
+              <div id="bookmarks">
+                <a href="#elec">Electronics</a>
+                <a href="#cloths">Clothing</a>
+                <a href="#home">Home Decor</a>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </header>
+
+    <a href="#navbar"><img src="up.png" alt="" height="40px" id="btn"></a>
+
+    <main>
+      <div id="elec">
+        <h2>Electronics</h2>
+
+        <div class="container">
+          <div class="card">
+            <h3>Laptop</h3>
+            <p>
+              <b>Description: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, nesciunt!
+            </p>
+            <div class="img">
+              <img src="https://cdn.pixabay.com/photo/2012/04/13/20/24/laptop-33521_1280.png" alt="failed to load" />
+            </div>
+            <p>
+              <b>Price: </b>$999.99<br>
+              <b>Availability: </b>In stock
+            </p>
+            <ul>
+              <li><b>Brand: </b>XYZ Electronics</li>
+              <li><b>Screen: </b>15.6 inches</li>
+              <li><b>RAM: </b>8GB</li>
+              <li><b>Storage: </b>512GB SSD</li>
+            </ul>
+            <button>
+              <a href="https://cdn.pixabay.com/photo/2012/04/13/20/24/laptop-33521_1280.png" target="_blank">View
+                Details
+              </a>
+            </button>
+          </div>
+          <div class="card">
+            <h3>Smartphone</h3>
+            <p>
+              <b>Description: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ab!
+            </p>
+            <div class="img">
+
+              <img src="https://cdn.pixabay.com/photo/2022/02/23/20/19/iphone-7031424_1280.png" alt="failed to load" />
+            </div>
+            <p>
+              <b>Price: </b>$699.99<br>
+              <b>Availability: </b>Out of stock
+            </p>
+            <ul>
+              <li><b>Brand: </b>ABC Mobiles</li>
+              <li><b>Screen: </b>6.5 inches</li>
+              <li><b>Camera: </b>64MP + 12MP</li>
+              <li><b>Storage: </b>128GB</li>
+            </ul>
+            <button>
+              <a href="https://cdn.pixabay.com/photo/2022/02/23/20/19/iphone-7031424_1280.png" target="_blank"> View
+                Details
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <div id="cloths">
+        <h2>Clothing</h2>
+        <div class="container">
+          <div class="card">
+            <h3>T-Shirt</h3>
+            <p>
+              <b>Description: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nobis.
+            </p>
+            <div class="img">
+              <img src="https://cdn.pixabay.com/photo/2020/12/18/03/27/clothing-5841103_1280.png"
+                alt="failed to load" />
+            </div>
+            <p>
+              <b>Price: </b>$19.99<br>
+              <b>Availability: </b>In stock
+            </p>
+            <ul>
+              <li><b>Brand: </b>Fashion Apparel</li>
+              <li><b>Color: </b>Black and White</li>
+              <li><b>Size: </b>S,M,L</li>
+              <li><b>Material: </b>100% Cotton</li>
+            </ul>
+            <button>
+              <a href="https://cdn.pixabay.com/photo/2020/12/18/03/27/clothing-5841103_1280.png" target="_blank">View
+                Details
+              </a>
+            </button>
+          </div>
+          <div class="card">
+            <h3>Jeans</h3>
+            <p>
+              <b>Description: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, expedita.
+            </p>
+            <div class="img">
+              <img src="https://cdn.pixabay.com/photo/2012/04/24/23/22/pants-41093_1280.png" alt="failed to load" />
+            </div>
+            <p>
+              <b>Price: </b>$49.99<br>
+              <b>Availability: </b>In stock
+            </p>
+            <ul>
+              <li><b>Brand: </b>Fashion Apparel</li>
+              <li><b>Color: </b>Grey</li>
+              <li><b>Size: </b>S,M,L</li>
+              <li><b>Material: </b>Lycra</li>
+            </ul>
+            <button>
+              <a href="https://cdn.pixabay.com/photo/2012/04/24/23/22/pants-41093_1280.png" target="_blank">View Details
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <div id="home">
+        <h2>Home Decor</h2>
+        <div class="container">
+          <div class="card">
+            <h3>Table lamp</h3>
+            <p>
+              <b>Description: </b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, fuga.
+            </p>
+            <div class="img">
+              <img
+                src="https://www.whiteteak.com/media/fishpig/webp/catalog/product/cache/4f9684b790a78d2ad48602ec5021b7a8/t/l/tl57-10004_1_.webp"
+                alt="failed to load" />
+            </div>
+            <p>
+              <b>Price: </b>$39.99<br>
+              <b>Availability: </b>In stock
+            </p>
+            <ul>
+              <li><b>Brand: </b>Home Essentials</li>
+              <li><b>Color: </b>White</li>
+              <li><b>Dimensions: </b>12 inches (height)</li>
+              <li><b>Material: </b>Ceramic, Metal</li>
+            </ul>
+            <button>
+              <a href="https://www.whiteteak.com/media/fishpig/webp/catalog/product/cache/4f9684b790a78d2ad48602ec5021b7a8/t/l/tl57-10004_1_.webp"
+                target="_blank">View Details
+              </a>
+            </button>
+          </div>
+          <div class="card">
+            <h3>Pillow Cushions</h3>
+            <p>
+              <b>Description: </b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, delectus?
+            </p>
+            <div class="img">
+              <img src="https://cdn.pixabay.com/photo/2015/05/11/22/38/picture-763262_1280.png" alt="failed to load" />
+            </div>
+            <p>
+              <b>Price: </b>$39.99<br>
+              <b>Availability: </b>In stock
+            </p>
+            <ul>
+              <li><b>Brand: </b>Home Essentials</li>
+              <li><b>Color: </b>White, Brown, Grey</li>
+              <li><b>Dimensions: </b>5.5 inches</li>
+              <li><b>Material: </b>Polyester</li>
+            </ul>
+            <button>
+              <a href="https://cdn.pixabay.com/photo/2015/05/11/22/38/picture-763262_1280.png" target="_blank">View
+                Details
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+    </main>
+    <footer>
+      <center>
+        &#169 footer of the page
+      </center>
+    </footer>
+    <hr>
+    <br>
+  </div>
+  </div>
+</body>
+
+</html>
