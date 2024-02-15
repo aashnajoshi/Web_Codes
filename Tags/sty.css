@@ -115,14 +115,14 @@ textarea {
   position: relative;
 
   /* animation can be done in two ways:  (defining each property separately.)
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-name: move; */
 
   /*or in a single line:*/
-  animation: 10s linear infinite alternate move;
+  animation: 5s linear infinite alternate move;
 }
 
 /*targetting class*/
@@ -196,6 +196,6 @@ a:hover,
 
   to {
     top: 0;
-    /* left: 1100px; */
+    left: 300px;
   }
 }
