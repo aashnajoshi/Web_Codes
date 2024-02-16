@@ -273,20 +273,26 @@ repudiandae, blanditiis at quaerat officia omnis ex nam!
         <fieldset>
             <legend> Fill your details: </legend>
             <form>
-                <label>Name: </label> <input type="text" placeholder="Enter Your First Name" maxlength="10" required>
-                <label>Last Name: </label> <input type="text" placeholder="Enter your Last Name" maxlength="10"
+                <label for="fname">First Name: </label> <input id="fname" type="text"
+                    placeholder="Enter Your First Name" maxlength="10" required>
+                <label for="lname">Last Name: </label> <input id="lname" type="text" placeholder="Enter your Last Name"
+                    maxlength="10" required><br><br>
+                <label for="pno">Phone No: </label><input id="pno" type="text" placeholder="Enter your Phone No."
+                    maxlength="10" required>
+                <label for="mail">Email: </label> <input id="mail" type="email" placeholder="Enter your E-mail Id"
+                    required> <br><br>
+                <label for="dob">DOB: </label><input id="dob" type="date" required> <br><br>
+                <label for="addr">Address: </label><textarea id="addr" rows="3" cols="30" maxlength="100"
+                    placeholder="Enter your address" wrap="hard" required></textarea><br><br>
+                <label for="uname">Username: </label><input id="uname" type="text" placeholder="Set an Username"
+                    required>
+                <label for="pass">Password: </label><input id="pass" type="password" placeholder="Enter your Password"
                     required><br><br>
-                <label>Phone No: </label><input type="text" placeholder="Enter your Phone No." maxlength="10" required>
-                <label>Email: </label> <input type="email" placeholder="Enter your E-mail Id" required> <br><br>
-                <label>DOB: </label><input type="date" required> <br><br>
-                <label>Address: </label><textarea rows="3" cols="30" maxlength="100" placeholder="Enter your address"
-                    wrap="hard" required></textarea><br><br>
-                <label>Username: </label><input type="text" placeholder="Set an Username" required>
-                <label>Password: </label><input type="password" placeholder="Enter your Password" required><br><br>
-                <label>Select Gender: </label><br><br><input type="radio" name="Gender">Male<input type="radio"
-                    name="Gender">Female<input type="radio" name="Gender">Unspecified<br><br><input type="checkbox"
-                    class="text"> I have read and agree to all terms n conditions. And hereby declare all the
-                information filled in the above form is authentic.<br><br>
+                <label for="gender">Select Gender: </label><br><br><input id="gender" type="radio"
+                    name="Gender">Male<input type="radio" name="Gender">Female<input type="radio"
+                    name="Gender">Unspecified<br><br><input type="checkbox" class="text"> I have read and agree to all
+                terms n conditions. And hereby declare all the information filled in the above form is
+                authentic.<br><br>
                 <details>
                     <summary>Terms:
                         <!-- positioning is off
