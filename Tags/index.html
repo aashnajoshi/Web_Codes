@@ -274,11 +274,11 @@ repudiandae, blanditiis at quaerat officia omnis ex nam!
             <legend> Fill your details: </legend>
             <form>
                 <label for="fname">First Name: </label> <input id="fname" type="text"
-                    placeholder="Enter Your First Name" maxlength="10" required>
+                    placeholder="Enter Your First Name" maxlength="10" required pattern="[a-zA-Z]">
                 <label for="lname">Last Name: </label> <input id="lname" type="text" placeholder="Enter your Last Name"
-                    maxlength="10" required><br><br>
+                    maxlength="10" required pattern="[a-zA-Z]"><br><br>
                 <label for="pno">Phone No: </label><input id="pno" type="text" placeholder="Enter your Phone No."
-                    maxlength="10" required>
+                    maxlength="10" required pattern="[0-9]">
                 <label for="mail">Email: </label> <input id="mail" type="email" placeholder="Enter your E-mail Id"
                     required> <br><br>
                 <label for="dob">DOB: </label><input id="dob" type="date" required> <br><br>
@@ -290,14 +290,21 @@ repudiandae, blanditiis at quaerat officia omnis ex nam!
                     required><br><br>
                 <label for="gender">Select Gender: </label><br><br><input id="gender" type="radio"
                     name="Gender">Male<input type="radio" name="Gender">Female<input type="radio"
-                    name="Gender">Unspecified<br><br><input type="checkbox" class="text"> I have read and agree to all
+                    name="Gender">Unspecified<br><br>
+                <label for="drop">Enter your location preferences:</label>
+                <select name="pref" id="drop">
+                    <option value="online">Remote</option>
+                    <option value="offline">On-Site</option>
+                    <option value="hybrid">Hybrid</option>
+                </select><br><br>
+                <input type="checkbox" class="text"> I have read and agree to all
                 terms n conditions. And hereby declare all the information filled in the above form is
                 authentic.<br><br>
                 <details>
                     <summary>Terms:
-                        <!-- positioning is off
-                        <button popovertarget="info" id="btnn" type="button" class="information">i</button>
-                        <div id="info" popover> Accept em blindly :/</div><br><br> -->
+                        <!-- positioning is off --><button popovertarget="info" id="btnn" type="button"
+                            class="information">i</button>
+                        <div id="info" popover> Accept em blindly :/</div><br><br>
                     </summary>
                     <content>Random terms to oblige.. ;)</content>
                 </details><br><button type="submit"> Submit Form </button> <button type="reset"> Reset</button>
