@@ -1,12 +1,21 @@
 /* 3 types of css: inline, internal, external;
-   selectors: 
-      - universal(*), element (no symbol), id(#), class(.); 
-      - To edit various properties we separate the elements using (,);
-      - To edit particular type of elements from a class (tag.class);
-      - To edit a specific quality of element (tag:quality);
+
+  selectors: 
+    - universal(*) n :root, element (no symbol), id(#), class(.); 
+    - To edit various properties we separate the elements using (,);
+    - To edit particular type of elements from a class (tag.class);
+    - To edit a specific quality of element (tag:quality);
+
+  cascading effect:
+    - importance (using '!important'{10,000}) after the parameter: 
+        eg. color: x !important;
+    - specificity order:
+        (inline{1000} > id{100} > class/attrib/pseudo-class{10} > element/pseudo-ele{1} > universal{0})
+    - position/order of occurance (for same specificity order/level) 
+    - origin (Explicitely_set > extension specific > browser specific)
 */
 
-/*targetting all elements*/
+/*Universal Selectors*/
 * {
   box-sizing: border-box;
   overflow-x: none;
@@ -21,8 +30,7 @@
   --txt: var(--dark);
 }
 
-/*targetting tags by name*/
-
+/*targetting elements*/
 h1,
 h2,
 h3,
@@ -94,14 +102,16 @@ button {
   margin: .5rem;
   position: relative;
 
-  /* animation can be done in two ways:  (defining each property separately.)
+  /* animation can be done in two ways: 
+
+  -> defining each property separately:
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-name: move; */
+  animation-name: move; 
 
-  /*or in a single line:*/
+  -> or a single line*/
   animation: 5s linear infinite alternate move;
 }
 
@@ -129,6 +139,18 @@ button {
   height: 250px;
   width: auto;
 }
+
+/* targetting attributes */
+[x=9] {
+  /* would look for tag having 'x' attrib == 9 and would apply the styling
+        eg. {in HTML}, we have: <div x=9> ... </div> 
+  the styling would be applied, since the condition is satisfied i.e there is an attr 'x' whose value is 9. */
+  background-color: var(--mid)
+}
+
+/* if for some reason we just mentioned 'x' then it would check the elements for mere existance of x
+        eg. [x]{} would apply the styles to all the tags containing 'x' having any value
+     */
 
 /*targetting grps*/
 p,
@@ -161,14 +183,14 @@ a.lnk {
   margin-left: 2em;
 }
 
-/* div>p{} (direct child) / div p{} (descendant) - would target all the 'p' within a 'div'; */
+/* div>p{} (direct child) / div p{} (descendant) - target all 'p' within 'div' */
 .lnk>a {
   /* all 'a' inside element having class 'lnk' (direct child)*/
   margin-left: 2em;
 }
 
 .lnk a {
-  /* all 'a' inside element having class 'lnk' (indirect chils\d.. or descendant)*/
+  /* all 'a' inside element having class 'lnk' (indirect child or a descendant)*/
   margin-left: 2em;
 }
 
@@ -198,6 +220,7 @@ img.pix:hover {
 .dark-mode .lt {
   background-image: linear-gradient(to left, #B1C7D2 30%, #456990 70%);
 }
+
 
 /* Animation Queries*/
 @keyframes move {
