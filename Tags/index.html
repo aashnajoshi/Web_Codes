@@ -5,24 +5,26 @@
     <title> Title of Site </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--importing font (from gfonts)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
-
     <!--adding favicon (icon on tab before title) using link tag-->
     <link rel="shortcut icon"
         href="https://cdn2.iconfinder.com/data/icons/astronaut-3d-illustration/512/ASTRONOUT_playing_guitar_on_the_moon.png"
         type="image/x-icon">
 
+    <!--importing font (from gfonts)using 'link'-->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet"> -->
+
+
     <!--internal css (using 'style' tag)-->
     <style>
-        h1,
-        h2,
-        h3 {
-            font: bold;
-            text-decoration: underline;
-            text-align: center;
+        /* importing font (from gfonts)using 'import' {more preffered plus less LOC)*/
+        @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+
+        body {
+            font-family: "Bacasime Antique", serif;
+            background-color: var(--bg);
         }
     </style>
 
@@ -44,8 +46,8 @@
             <img src="cont/icon.png" id="mode" height="40px" onclick="myFunction()">
 
             <!--two ways to add "go to top" hyperlink-->
-            <button id="btn" class="lnk"><a href="#content">Back to Top</a></button><a href="#content"><img id="icon"
-                    src="cont/up.png" height="40px"></a>
+            <button id="btn" class="lnk"><a href="#content">Back to Top</a></button>
+            <a href="#content"><img id="icon" src="cont/up.png" height="40px"></a>
             <div id="navbar">
                 <nav>
                     <ul type="none" class="lt">

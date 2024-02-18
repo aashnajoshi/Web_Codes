@@ -8,7 +8,6 @@
 
 /*targetting all elements*/
 * {
-  font-family: "Bacasime Antique", serif;
   box-sizing: border-box;
   overflow-x: none;
 }
@@ -22,10 +21,7 @@
   --txt: var(--dark);
 }
 
-/*targetting specific tag*/
-body {
-  background-color: var(--bg);
-}
+/*targetting tags by name*/
 
 h1,
 h2,
@@ -33,6 +29,9 @@ h3,
 h4,
 h5,
 h6 {
+  font: bold;
+  text-decoration: underline;
+  text-align: center;
   color: var(--txt);
   text-shadow: .5em 1em 1em var(--mid);
 }
@@ -55,25 +54,6 @@ button {
   justify-content: center;
   align-items: center;
   box-shadow: .5em .5em .8em var(--mid);
-}
-
-/*targetting grp of tags*/
-p,
-pre,
-article {
-  color: var(--txt);
-  font-size: 1rem;
-}
-
-input,
-textarea {
-  font-size: 0.9rem;
-  text-align: center;
-  color: var(--bg);
-  text-align: center;
-  justify-content: center;
-  padding: .5em;
-  margin: .5em;
 }
 
 /*targetting ids*/
@@ -135,12 +115,6 @@ textarea {
   align-items: space-evenly;
 }
 
-.text,
-caption {
-  color: var(--txt);
-  padding-left: 2em;
-}
-
 .image {
   display: flex;
   flex-flow: row wrap;
@@ -156,16 +130,49 @@ caption {
   width: auto;
 }
 
-/*targetting tags from a particular class*/
-img.pix:hover {
-  transform: scale(1.07);
+/*targetting grps*/
+p,
+pre,
+article {
+  color: var(--txt);
+  font-size: 1rem;
 }
 
+input,
+textarea {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--bg);
+  text-align: center;
+  justify-content: center;
+  padding: .5em;
+  margin: .5em;
+}
+
+.text,
+caption {
+  color: var(--txt);
+  padding-left: 2em;
+}
+
+/*targetting elements within a specific element */
 a.lnk {
+  /* all 'a' of class 'lnk'*/
   margin-left: 2em;
 }
 
-/*targetting properties of a tag*/
+/* div>p{} (direct child) / div p{} (descendant) - would target all the 'p' within a 'div'; */
+.lnk>a {
+  /* all 'a' inside element having class 'lnk' (direct child)*/
+  margin-left: 2em;
+}
+
+.lnk a {
+  /* all 'a' inside element having class 'lnk' (indirect chils\d.. or descendant)*/
+  margin-left: 2em;
+}
+
+/*targetting properties of a tag (Pseudo-Selectors)*/
 button:hover,
 .dark-mode button:hover {
   background-color: #B1C7D2;
@@ -176,6 +183,11 @@ a:hover,
 .dark-mode a:hover {
   color: var(--mid);
 }
+
+img.pix:hover {
+  transform: scale(1.07);
+}
+
 
 /*dark-mode settings*/
 .dark-mode {
