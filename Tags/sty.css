@@ -221,6 +221,21 @@ img.pix:hover {
   background-image: linear-gradient(to left, #B1C7D2 30%, #456990 70%);
 }
 
+/* positioning properties :
+using 'position' 
+(absolute, relative, fixed, sticky, inherit..etc);
+
+and for positioning the element looks at the {positioning} of the parent (or ancestor(in seq) if not found) element. or in special cases: t{ransfrom, filter, perspective} also act as a positioning for parent and further influencing the properties of the child
+
+using 'z-index'
+
+Higher z-index value would make an element appear more forward on the screen.
+
+say. A have z-index:4 B have 6 and C doesn't have defined anything (so 0); then the positioning would be  BAC..on top of each other... so B would be positioned in front followed by A and C,
+
+*/
+
+
 
 /* Animation Queries*/
 @keyframes move {
