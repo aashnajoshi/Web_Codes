@@ -1,45 +1,82 @@
-// Ways for printing Stetements in JavaScript
+// Ways for printing Statements in JavaScript
 document.write("hello"); // Output via HTML during page load
 console.log("Hello World!"); // Output in terminal (with NewLine at end) client-side JS
 process.stdout.write("Hello World!!!"); //Output in terminal (without NewLine at end) server-side JS
 alert("HEY!?"); //alert dialog box in browser
 
 //Using Variables
-var x = 10; //function-scoped
-let y = 20; //block-scoped
-const z = 30; //block-scoped, cannot be reassigned
-a = 40; //in strict mode, will throw ReferenceError
+var x = 0; //function-scoped
+let y = 10; //block-scoped
+const z = 20; //block-scoped, cannot be reassigned
+na = "Alice"; //in strict mode, will throw ReferenceError
 
 //Data Types: 
 // Primitive: String("", '', ``), Number, Boolean, Null, Undefined, Symbol
-const name = "Alice";
-const age = 30;
+const greeting = `Hello, my name is ${na} and I am ${y} years old.`;
 
-const greeting = `Hello, my name is ${name} and I am ${age} years old.`;
-
-//Composite: Object {key: value}, Array [], Function
+// Composite: Object {key: value}, Array [], Function
+// Object
+const person = { name: na, age: y };
+// Array
+const vars = [x, y, z, a, na];
+// Function
+function greet(na) { return `Hello, ${na}!`; }
 
 //Operators: Arithmetic, Comparison, Logical, Assignment, Bitwise, Ternary
-//Arithmetic: +, -, *, /, %, ++, --, **
+//Arithmetic: +, -, *, /, %, ++, --
 //Comparison: ==, ===, !=, !==, >, <, >=, <=
 //Logical: &&, ||, !
-//Assignment: =, +=, -=, *=, /=, %=, **=
+//Assignment: =, +=, -=, *=, /=, %=
 //Bitwise: &, |, ^, ~, <<, >>, >>>
 //Ternary: <Condition> ? <Expression1> : <Expression2>; eg. (age >= 18) ? 'adult' : 'minor';
 
-//Precedence and Associativity (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+//Precedence (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
-//Control Structures: Conditional (if, else if, else, switch); Loops (for, while, do while);  (break, continue,return)
-var variable = 0;
-if (variable === 0) {
+//Control Structures: Conditional(if, else if, else, switch); Loops(for, while, do while); break, continue, return
+
+//Conditional (if, else if, else)
+if (x === 0) {
     console.log("The variable is 0");
 }
-else if (variable === -1) {
+else if (x === -1) {
     console.log("The variable is -1");
 }
-else if (variable === 1) {
+else if (x === 1) {
     console.log("The variable is 1");
 }
 else {
     console.log("The variable is not 1, -1 or 0");
 }
+
+//Conditional (switch)
+let grade = 'A';
+switch (grade) {
+    case 'A':
+        console.log("Excellent");
+        break;
+    case 'B':
+        console.log("Good");
+        break;
+    case 'C':
+        console.log("Fair");
+        break;
+    case 'D':
+        console.log("Poor");
+        break;
+    default:
+        console.log("Invalid grade");
+}
+//Loops (for)
+for (; x < 5; x++) {
+    console.log(x);
+}
+//Loops (while)
+while (x < 5) {
+    console.log(x);
+    x++;
+}
+//Loops (do while)
+do {
+    console.log(x);
+    x++;
+} while (x < 5);
