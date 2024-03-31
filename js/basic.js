@@ -17,7 +17,7 @@ const age = 30;
 
 const greeting = `Hello, my name is ${name} and I am ${age} years old.`;
 
-//Composite: Object, Array, Function
+//Composite: Object {key: value}, Array [], Function
 
 //Operators: Arithmetic, Comparison, Logical, Assignment, Bitwise, Ternary
 //Arithmetic: +, -, *, /, %, ++, --, **
@@ -25,8 +25,21 @@ const greeting = `Hello, my name is ${name} and I am ${age} years old.`;
 //Logical: &&, ||, !
 //Assignment: =, +=, -=, *=, /=, %=, **=
 //Bitwise: &, |, ^, ~, <<, >>, >>>
-//Ternary: ?: eg. (age >= 18) ? 'adult' : 'minor';
+//Ternary: <Condition> ? <Expression1> : <Expression2>; eg. (age >= 18) ? 'adult' : 'minor';
 
 //Precedence and Associativity (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
-//Control Structures (if, else, else if, switch, for, while, do while, break, continue)
+//Control Structures: Conditional (if, else if, else, switch); Loops (for, while, do while);  (break, continue,return)
+var variable = 0;
+if (variable === 0) {
+    console.log("The variable is 0");
+}
+else if (variable === -1) {
+    console.log("The variable is -1");
+}
+else if (variable === 1) {
+    console.log("The variable is 1");
+}
+else {
+    console.log("The variable is not 1, -1 or 0");
+}
