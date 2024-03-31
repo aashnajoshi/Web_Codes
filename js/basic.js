@@ -61,6 +61,12 @@ switch (grade) {
 for (; x < 5; x++) {
     console.log(x);
 }
+//for-in
+for (i in arr) {
+    console.log(arr[i]);
+}
+//for-each
+arr.forEach(x => console.log(x));
 //Loops (while)
 while (x < 5) {
     console.log(x);
