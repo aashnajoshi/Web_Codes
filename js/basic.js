@@ -15,26 +15,17 @@ na = "Alice"; //in strict mode, will throw ReferenceError
 const greeting = `Hello, my name is ${na} and I am ${y} years old.`;
 
 // Composite: Object {key: value}, Array [], Function
-// Object
-const person = { name: na, age: y };
-// Array
-const vars = [x, y, z, a, na];
-// Function
-function greet(na) { return `Hello, ${na}!`; }
+const obj = { name: na, age: y }; // Object
+const arr = [x, y, z, a, na]; // Array
+function greet(na) { return `Hello, ${na}!`; } // Function
 
-//Operators: Arithmetic, Comparison, Logical, Assignment, Bitwise, Ternary
-//Arithmetic: +, -, *, /, %, ++, --
-//Comparison: ==, ===, !=, !==, >, <, >=, <=
-//Logical: &&, ||, !
-//Assignment: =, +=, -=, *=, /=, %=
-//Bitwise: &, |, ^, ~, <<, >>, >>>
-//Ternary: <Condition> ? <Expression1> : <Expression2>; eg. (age >= 18) ? 'adult' : 'minor';
+//Operators: Arithmetic (+, -, *, /, %, ++, --), Comparison (==, ===, !=, !==, >, <, >=, <=), Logical (&&, ||, !), Assignment (, +=, -=, *=, /=, %=), Bitwise (&, |, ^, ~, <<, >>, >>>), Ternary (<Condition> ? <Expression1> : <Expression2>;)
+(age >= 18) ? 'adult' : 'minor';
 
 //Precedence (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
-//Control Structures: Conditional(if, else if, else, switch); Loops(for, while, do while); break, continue, return
-
-//Conditional (if, else if, else)
+//Control Structures: Conditional(if-elseif-else, switch); Loops(for, while, do while); break, continue, return
+//Conditional (if, else-if, else)
 if (x === 0) {
     console.log("The variable is 0");
 }
@@ -47,7 +38,6 @@ else if (x === 1) {
 else {
     console.log("The variable is not 1, -1 or 0");
 }
-
 //Conditional (switch)
 let grade = 'A';
 switch (grade) {
@@ -66,6 +56,7 @@ switch (grade) {
     default:
         console.log("Invalid grade");
 }
+
 //Loops (for)
 for (; x < 5; x++) {
     console.log(x);
