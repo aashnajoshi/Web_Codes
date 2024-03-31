@@ -1,7 +1,7 @@
 // Ways for printing Statements in JavaScript
 document.write("hello"); // Output via HTML during page load
 console.log("Hello World!"); // Output in terminal (with NewLine at end) client-side JS
-process.stdout.write("Hello World!!!"); //Output in terminal (without NewLine at end) server-side JS
+process.stdout.write("Hello Tech_World!!!"); //Output in terminal (without NewLine at end) server-side JS
 alert("HEY!?"); //alert dialog box in browser
 
 //Using Variables
@@ -17,14 +17,16 @@ const greeting = `Hello, my name is ${na} and I am ${y} years old.`;
 // Composite: Object {key: value}, Array [], Function
 const obj = { name: na, age: y }; // Object
 const arr = [x, y, z, a, na]; // Array
-function greet(na) { return `Hello, ${na}!`; } // Function
+function greet(na) { return `Hello, ${na}!` }; // Function
+const greet = (na) => { `Hello, ${na}!` }; //arrow function
 
 //Operators: Arithmetic (+, -, *, /, %, ++, --), Comparison (==, ===, !=, !==, >, <, >=, <=), Logical (&&, ||, !), Assignment (, +=, -=, *=, /=, %=), Bitwise (&, |, ^, ~, <<, >>, >>>), Ternary (<Condition> ? <Expression1> : <Expression2>;)
 (age >= 18) ? 'adult' : 'minor';
 
 //Precedence (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+//Scopes: Global, Local (Function, Block), Lexical (Nested), Module (import/export, require)
 
-//Control Structures: Conditional(if-elseif-else, switch); Loops(for, while, do while); break, continue, return
+//Control Structures: Conditional(if-elseif-else, switch); Loops(for, while, do while); break (exits loop), continue (re-loops), return (exits function)
 //Conditional (if, else-if, else)
 if (x === 0) {
     console.log("The variable is 0");
@@ -77,3 +79,5 @@ do {
     console.log(x);
     x++;
 } while (x < 5);
+
+//RegExp: Regular Expressions
